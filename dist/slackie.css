@@ -1,0 +1,350 @@
+/* 
+Slackie Version 1.0 Beta 
+Made avalible under the MIT License 
+Created by Niels Klom
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900italic,900);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Updated with new HTML5(.1) tags and new button 
+   and link styles by Niels Klom. 20151215
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, time, date, area, ins, del, picture, track, map {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* underlined links are so 2000 */
+a {
+  text-decoration: none; }
+
+/* no more ugly buttons */
+button {
+  border: none;
+  outline: none;
+  background: transparent; }
+
+nav.desktop-slackie {
+  margin: 0;
+  padding: 0;
+  background: #FF7518;
+  top: 0;
+  width: 100%;
+  height: 66px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px; }
+  nav.desktop-slackie a:hover {
+    text-decoration: none !important; }
+  nav.desktop-slackie a:focus {
+    text-decoration: none;
+    outline: none; }
+  nav.desktop-slackie .logo {
+    float: left;
+    font-weight: 700;
+    margin: 20px 0 20px 10px;
+    height: 30px;
+    font-size: 28px;
+    color: #fafafa;
+    line-height: 1 !important;
+    letter-spacing: 0; }
+  nav.desktop-slackie ul {
+    list-style-type: none;
+    box-sizing: border-box;
+    float: right;
+    line-height: 32px;
+    margin: 20px 0 20px 0;
+    display: none;
+    padding: 1px; }
+    @media (min-width: 850px) {
+      nav.desktop-slackie ul {
+        display: inline; } }
+    nav.desktop-slackie ul li {
+      display: inline-block; }
+      nav.desktop-slackie ul li a {
+        position: relative;
+        font-weight: 700;
+        color: #fafafa;
+        padding: 8px 7px 9px;
+        font-size: 17px !important;
+        border-radius: 5px;
+        margin-left: 9px;
+        opacity: .8; }
+        nav.desktop-slackie ul li a:hover {
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+          background: rgba(0, 0, 0, 0.1);
+          opacity: 1; }
+  nav.desktop-slackie .slackie-action-btn {
+    float: right;
+    box-sizing: content-box;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fafafa;
+    -webkit-font-smoothing: antialiased;
+    padding: 10px 14px 9px;
+    vertical-align: bottom;
+    border-radius: 4px;
+    background: #3369E8;
+    white-space: nowrap;
+    position: relative;
+    line-height: 1 !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    max-width: 130px;
+    margin-left: 1px;
+    box-shadow: 0px 2px 0px #3369E8;
+    display: none;
+    font-weight: 900;
+    margin: 17px 5px 20px 0;
+    margin-left: 9px;
+    font-size: 12pt !important;
+    letter-spacing: 0; }
+    nav.desktop-slackie .slackie-action-btn:hover {
+      text-decoration: none;
+      box-shadow: 0px 2px 0px #123da3; }
+    nav.desktop-slackie .slackie-action-btn i {
+      vertical-align: baseline; }
+    @media (min-width: 850px) {
+      nav.desktop-slackie .slackie-action-btn {
+        display: inline-block; } }
+  nav.desktop-slackie .mobile-nav-trigger.icon {
+    float: right;
+    box-sizing: content-box;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fafafa;
+    -webkit-font-smoothing: antialiased;
+    padding: 10px 14px 9px;
+    vertical-align: bottom;
+    border-radius: 4px;
+    background: #3369E8;
+    white-space: nowrap;
+    position: relative;
+    line-height: 1 !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    max-width: 30px;
+    margin-left: 1px;
+    box-shadow: 0px 2px 0px #3369E8;
+    margin: 15px 5px 20px 0;
+    margin-left: 9px;
+    font-size: 22px;
+    padding: 9px; }
+    nav.desktop-slackie .mobile-nav-trigger.icon:hover {
+      text-decoration: none;
+      box-shadow: 0px 2px 0px #123da3; }
+    @media (min-width: 850px) {
+      nav.desktop-slackie .mobile-nav-trigger.icon {
+        display: none; } }
+    nav.desktop-slackie .mobile-nav-trigger.icon i {
+      vertical-align: middle; }
+  nav.desktop-slackie .mobile-nav-trigger.text {
+    float: right;
+    box-sizing: content-box;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fafafa;
+    -webkit-font-smoothing: antialiased;
+    padding: 10px 14px 9px;
+    vertical-align: bottom;
+    border-radius: 4px;
+    background: #3369E8;
+    white-space: nowrap;
+    position: relative;
+    line-height: 1 !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    max-width: 50px;
+    margin-left: 1px;
+    box-shadow: 0px 2px 0px #3369E8;
+    font-weight: 900;
+    margin: 17px 5px 20px 0;
+    margin-left: 9px;
+    font-size: 12pt; }
+    nav.desktop-slackie .mobile-nav-trigger.text:hover {
+      text-decoration: none;
+      box-shadow: 0px 2px 0px #123da3; }
+    nav.desktop-slackie .mobile-nav-trigger.text:before {
+      content: 'Menu'; }
+    @media (min-width: 850px) {
+      nav.desktop-slackie .mobile-nav-trigger.text {
+        display: none; } }
+
+nav.mobile-slackie {
+  display: none;
+  background: #FF7518;
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  -webkit-animation: mobile;
+          animation: mobile;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+  nav.mobile-slackie a {
+    text-decoration: none; }
+  nav.mobile-slackie .logo {
+    margin: 20px 0px 20px 10px;
+    float: left;
+    color: #fafafa;
+    font-size: 28px;
+    font-weight: 700;
+    opacity: .45;
+    line-height: 1 !important;
+    letter-spacing: 0; }
+  nav.mobile-slackie .close-slackie-mobile {
+    margin: 20px 20px 0 0;
+    color: #fafafa;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transition: -webkit-transform .2s ease-out;
+            transition: transform .2s ease-out;
+    float: right;
+    font-size: 20px;
+    font-weight: 700;
+    -webkit-animation: close;
+            animation: close;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s; }
+  nav.mobile-slackie ul {
+    list-style-type: none;
+    margin: 5pc 0 0 45px;
+    padding: 0;
+    letter-spacing: 0.5px; }
+    nav.mobile-slackie ul li:nth-of-type(2) a {
+      -webkit-animation-delay: -0.8s;
+              animation-delay: -0.8s; }
+    nav.mobile-slackie ul li:nth-of-type(3) a {
+      -webkit-animation-delay: -0.6s;
+              animation-delay: -0.6s; }
+    nav.mobile-slackie ul li:nth-of-type(4) a {
+      -webkit-animation-delay: -0.4s;
+              animation-delay: -0.4s; }
+    nav.mobile-slackie ul li:nth-of-type(5) a {
+      -webkit-animation-delay: -0.2s;
+              animation-delay: -0.2s; }
+    nav.mobile-slackie ul li a {
+      font-size: 36px !important;
+      line-height: 70px;
+      color: #fafafa;
+      -webkit-animation: mobilein;
+              animation: mobilein;
+      -webkit-animation-delay: -1s;
+              animation-delay: -1s;
+      -webkit-animation-duration: 1.6s;
+              animation-duration: 1.6s;
+      -webkit-transition-timing-function: ease;
+              transition-timing-function: ease; }
+      @media (max-height: 480px) {
+        nav.mobile-slackie ul li a {
+          font-size: 28px;
+          line-height: 60px; } }
+      @media (max-height: 320px) {
+        nav.mobile-slackie ul li a {
+          font-size: 24px;
+          line-height: 45px; } }
+  nav.mobile-slackie .slackie-action-btn {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background: #e45c00;
+    color: #fafafa;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 75px;
+    letter-spacing: 0; }
+    nav.mobile-slackie .slackie-action-btn i {
+      vertical-align: baseline; }
+    @media (max-height: 380px) {
+      nav.mobile-slackie .slackie-action-btn {
+        display: none; } }
+
+.mobile-slackie:target {
+  display: block; }
+
+@-webkit-keyframes mobile {
+  from {
+    opacity: 0; } }
+
+@keyframes mobile {
+  from {
+    opacity: 0; } }
+@-webkit-keyframes close {
+  from {
+    -webkit-transform: rotate(-120deg);
+            transform: rotate(-120deg); } }
+@keyframes close {
+  from {
+    -webkit-transform: rotate(-120deg);
+            transform: rotate(-120deg); } }
+@-webkit-keyframes mobilein {
+  from {
+    margin-left: -300px; }
+  to {
+    margin-left: 0; } }
+@keyframes mobilein {
+  from {
+    margin-left: -300px; }
+  to {
+    margin-left: 0; } }
