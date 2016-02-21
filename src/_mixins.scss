@@ -1,0 +1,28 @@
+@mixin btn_noname ($textColor, $primaryColor, $maxwidth: 130px) {
+	box-sizing: content-box;
+	margin: 0;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: $textColor;
+	-webkit-font-smoothing: antialiased;
+	padding: 10px 14px 9px;		
+	vertical-align: bottom;
+	border-radius: 4px;
+	background: $primaryColor;
+	white-space: nowrap;
+	position: relative;
+	line-height: 1 !important;
+	text-shadow: 0 1px 1px rgba(0,0,0,.1);
+	text-align: center;
+	width: 100%;
+	font-size: 18px;
+	max-width: $maxwidth;
+    margin-left: 1px;
+    box-shadow: 0px 2px 0px $primaryColor;
+	&:hover
+	{
+		text-decoration: none;
+		box-shadow: 0px 2px 0px darken($primaryColor, 20%);
+	}
+}

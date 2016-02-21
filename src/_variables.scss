@@ -1,0 +1,20 @@
+/* Slackie.css Variables. Inspired by Matrialize.css 
+   Slackie uses Colors.scss to easily choose colors. 
+   Head over to _colors.scss to see all colors that are built in.
+   Vsit the site for full docs: www.slackie.nielsklom.eu */    
+$fontfamily: 'Lato'; // You can remove Lato by changing the font-family and removing the import from slackie.scss
+$linkcolor: $purple; // A useless variable... 
+$breakpoint: 850px; // The breakpoint at which the Desktop Nav disappears and the Mobile version appears.
+$callToActionFontWeight: 900; // The download button on the website. 
+// Nav
+$navbackground: $orange; // Speaks for itself 
+$navlinks: $white; // ""
+$navlogocolor: $white; // "" 
+$navcalltoaction: $sharp_blue; // ""
+$navBoxShadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);  // Only change if you know what you're doing
+// Mobile Nav
+$mobilelinkcolor: $white; // Speaks for itself 
+$mobilenavbackground: $orange; // "" 
+$mobilenavActionBtn: darken($mobilenavbackground, 10%); // ""
+$mobileNavOpacticy: 1; // ""
+$logoBlurColor: $white; // Color doesn't really matter since opacity is changed. Keep it the same as $navlogocolor

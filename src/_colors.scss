@@ -1,0 +1,44 @@
+/* 
+Colors.scss  
+Made avalible under the MIT License 
+Created by Niels Klom
+*/
+$red: #F44336;
+$orange: #FF7518;
+$yellow: #FFFF33;
+$amber: #FFC107;
+$pink: #E91E63;
+$purple: #9C27B0;
+$indigo: #3F51B5;
+$blue: #2196F3;
+$cyan: #00BCD4;
+$teal: #009688;
+$green: #4CAF50;
+$lime: #C6FF00;
+$brown: #8B4513;
+$grey: #607D8B;
+$black: #171717;
+$white: #fafafa;
+// Sharp Colors
+$sharp_green: #00E676;
+$sharp_red: #FF033E;
+$sharp_blue: #3369E8;
+$sharp_black: #000000;
+// Soft Colors
+$soft_green: #A4C639;
+$soft_red: #B31B1B;
+$soft_blue: #6495ED;
+$soft_black: #3B3C36;
+// Background Color Mixin
+@mixin bcgColor ($color) {
+	background: $color; 
+}
+@mixin clrColor ($color) {
+	color: $color;
+}
+@mixin bcgColorI ($color) {
+	background: $color !important; 
+}
+@mixin clrColorI ($color) {
+	color: $color !important;
+}
